@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import HeadServices from "../../components/Services/head";
 import ExploreCustomization from "../../components/Services/exploreCustomization";
 import ExploreTemplate from "../../components/Services/exploreTemplate";
+import { serivce_1_img, serivce_2_img, serivce_3_img, serivce_4_img, serivce_5_img } from "../../assets/images";
 
 export default function Services() {
 
@@ -28,17 +29,17 @@ export default function Services() {
                 />
                 <div className="grid grid-cols-3 m-10 gap-5">
                     <img
-                        src="https://images.unsplash.com/photo-1599459183200-59c7687a0275?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={serivce_1_img}
                         alt="Ảnh"
                         className="w-auto h-auto"
                     ></img>
                     <img
-                        src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={serivce_2_img}
                         alt="Ảnh"
                         className="w-auto h-auto"
                     ></img>
                     <img
-                        src="https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={serivce_3_img}
                         alt="Ảnh"
                         className="w-auto h-auto"
                     ></img>
@@ -47,7 +48,7 @@ export default function Services() {
                     <ExploreCustomization />
                 </div>
                 <img
-                    src="https://images.unsplash.com/photo-1585960622850-ed33c41d6418?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={serivce_4_img}
                     alt="Ảnh"
                     className="w-full h-[600px] object-cover"
                 ></img>
@@ -55,7 +56,7 @@ export default function Services() {
                     <ExploreTemplate />
                 </div>
                 <img
-                    src="https://images.unsplash.com/photo-1583937443566-6fe1a1c6e400?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={serivce_5_img}
                     alt="Ảnh"
                     className="w-full h-auto"
                 ></img>

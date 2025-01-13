@@ -102,8 +102,44 @@ import espson2 from "../images/products/imprimante/espson2.webp";
 import ring from "../images/ring.jpg";
 import band from "../images/band.jpg";
 import pendant from "../images/pendant.jpg";
+import serivce_1_img from "../images/FIX/service_1.jpg";
+import serivce_2_img from "../images/FIX/service_2.jpg";
+import serivce_3_img from "../images/FIX/service_3.jpg";
+import serivce_4_img from "../images/FIX/service_4.jpg";
+import serivce_5_img from "../images/FIX/service_5.jpg";
+import home_jewelry_1_img from "../images/FIX/home_jewelry_1.jpg";
+import home_jewelry_2_img from "../images/FIX/home_jewelry_2.jpg";
+import home_jewelry_3_img from "../images/FIX/home_jewelry_3.jpg";
+import home_jewelry_4_img from "../images/FIX/home_jewelry_4.jpg";
+import home_jewelry_5_img from "../images/FIX/home_jewelry_5.jpg";
+import home_jewelry_6_img from "../images/FIX/home_jewelry_6.jpg";
+import home_collection_1_img from "../images/FIX/home_collection_1.jpg";
+import home_collection_2_img from "../images/FIX/home_collection_2.jpg";
+import home_collection_3_img from "../images/FIX/home_collection_3.jpg";
+import home_collection_4_img from "../images/FIX/home_collection_4.jpg";
+
 
 export {
+  //==============================FIX===========================
+  // service
+  serivce_1_img,
+  serivce_2_img,
+  serivce_3_img,
+  serivce_4_img,
+  serivce_5_img,
+  // home_jewelry
+  home_jewelry_1_img,
+  home_jewelry_2_img,
+  home_jewelry_3_img,
+  home_jewelry_4_img,
+  home_jewelry_5_img,
+  home_jewelry_6_img,
+  // home_collection
+  home_collection_1_img,
+  home_collection_2_img,
+  home_collection_3_img,
+  home_collection_4_img,
+  //================================================================
   ring,
   band,
   pendant,
