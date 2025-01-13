@@ -26,7 +26,7 @@ const CustomForm = () => {
 
   const [validated, setValidated] = useState(false)
   const [disabled, setDisabled] = useState(false);
-  const [imageBase64, setImageBase64] = useState('http://127.0.0.1:8000/image/Account/unknown.jpg');
+  const [imageBase64, setImageBase64] = useState(process.env.REACT_APP_BACKEND_IMAGE_URL+'/Account/unknown.jpg');
   const [roles, setRoles] = useState([]);  
 
 
@@ -49,7 +49,7 @@ const CustomForm = () => {
     fullname.current.value = "";
     phone.current.value = "";
     address.current.value = "";
-    setImageBase64('http://127.0.0.1:8000/image/Account/unknown.jpg');
+    setImageBase64(process.env.REACT_APP_BACKEND_IMAGE_URL+'/Account/unknown.jpg');
 
   }
   const handleSingleFileBase64 = (base64) => {
