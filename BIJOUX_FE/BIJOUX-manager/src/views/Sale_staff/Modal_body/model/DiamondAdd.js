@@ -107,13 +107,13 @@ const CustomForm = ({ handleAddDiamond, onClose }) => {
 
 
     useEffect(() => {
-        console.log('addShape', addShape)
-        console.log('addColor', addColor)
-        console.log('addOrigin', addOrigin)
-        console.log('addClarity', addClarity)
-        console.log('addCut', addCut)
-        console.log('addSize', addSize)
-        console.log('count', count)
+        //console.log('addShape', addShape)
+        //console.log('addColor', addColor)
+        //console.log('addOrigin', addOrigin)
+        //console.log('addClarity', addClarity)
+        //console.log('addCut', addCut)
+        //console.log('addSize', addSize)
+        //console.log('count', count)
     }, [addShape, addColor, addOrigin, addClarity, addSize, count])
 
 
@@ -166,7 +166,7 @@ const CustomForm = ({ handleAddDiamond, onClose }) => {
                 diamond_clarity_id: addClarity,
                 diamond_cut_id: addCut
             }
-            console.log('diamond_search_information', diamond_search_information)
+            //console.log('diamond_search_information', diamond_search_information)
 
             //let diamond_search = diamondList.filter(item => item.diamond_origin.id == addOrigin.id && item.diamond_color.id == addColor && item.size == addSize && item.diamond_clarity.id == addClarity && item.diamond_cut.id == addCut)[0];
             const formData = new FormData();
@@ -175,7 +175,7 @@ const CustomForm = ({ handleAddDiamond, onClose }) => {
             let diamond_search =await get_diamond_list(formData, 'Searching Diamond');
             
             if (diamond_search.success && diamond_search.data.length > 0) {
-                console.log('diamond_search', diamond_search.data[0])
+                //console.log('diamond_search', diamond_search.data[0])
                 setSearchedDiamond(diamond_search.data[0]);
                 setIsSearch(true)
                 

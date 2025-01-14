@@ -70,7 +70,7 @@ const InfoCard = ({ mounting_type, model, handleChange }) => {
 
     }, [])
     useEffect(() => {
-        console.log("SHAPE LIST NÈ", availableShapes)
+        //console.log("SHAPE LIST NÈ", availableShapes)
     }, [availableShapes])
 
     const handleStyleSelect = (event) => {

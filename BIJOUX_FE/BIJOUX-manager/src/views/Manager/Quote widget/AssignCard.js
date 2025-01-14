@@ -34,14 +34,14 @@ function renderValue(item) {
 
 const AssignCard = ({ selection, staffList, handleAssign }) => {
     const [selectedStaff, setSelectedStaff] = useState(selection ? staffList.filter(staff => staff.id == selection.id)[0] : null);
-    console.log("selectedStaff", selection)
+    //console.log("selectedStaff", selection)
     const handleStaffSelect = (event, newValue) => {
-        console.log("newValue", newValue)
+        //console.log("newValue", newValue)
         if (newValue == null) {
             return;
         }
         const selectedItem = JSON.parse(newValue);
-        console.log('selectedItem', selectedItem)
+        //console.log('selectedItem', selectedItem)
         setSelectedStaff(selectedItem);
         handleAssign(selectedItem, selectedItem.role.id)
     };

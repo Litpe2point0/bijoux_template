@@ -25,7 +25,7 @@ import { useNavigate } from "react-router-dom";
 
 const Model_Page = ({mounting_type}) => {
   const navigate= useNavigate()
-  console.log('type nhè',mounting_type.name)
+  //console.log('type nhè',mounting_type.name)
   
 
   const [key, setKey] = useState('complete');

@@ -101,7 +101,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
 
             setMetalList(order_detail.product.product_metal)
             setDiamondList(order_detail.product.product_diamond)
-            console.log("PRODUCT DIAMOND", order_detail.product.product_diamond)
+            //console.log("PRODUCT DIAMOND", order_detail.product.product_diamond)
             setNote(order_detail.note)
 
 
@@ -137,7 +137,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
             designStaff_id: designStaff ? designStaff.id : null,
             productionStaff_id: productionStaff ? productionStaff.id : null
         }
-        console.log('assigned_information', assigned_information)
+        //console.log('assigned_information', assigned_information)
         const formData = new FormData();
         formData.append('assigned_information', JSON.stringify(assigned_information));
 
@@ -152,7 +152,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
     }
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
 

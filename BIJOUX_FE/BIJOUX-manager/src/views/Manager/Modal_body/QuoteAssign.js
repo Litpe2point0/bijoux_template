@@ -74,7 +74,7 @@ const CustomForm = ({ quoteInfo, onClose }) => {
 
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleSubmit = async (event) => {
@@ -91,7 +91,7 @@ const CustomForm = ({ quoteInfo, onClose }) => {
                 productionStaff_id: assignedProductionStaff.id,
                 note: note !=  null ? note.trim() : ''
             }
-            console.log('assigned_information', assigned_information)
+            //console.log('assigned_information', assigned_information)
             const formData = new FormData();
             formData.append('assigned_information', JSON.stringify(assigned_information));
 

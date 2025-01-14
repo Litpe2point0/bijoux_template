@@ -145,7 +145,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
     }
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleSubmit= async () =>{

@@ -16,7 +16,7 @@ export default function ImgUploadPreview({ handleFileUpload, handleFileBase64 })
 
     const handleFiles = (files) => {
         const file = files[0];
-        console.log("FILE NÀ", file);
+        //console.log("FILE NÀ", file);
         handleFileBase64(files.base64);
         handleFileUpload(null);
 
@@ -26,14 +26,12 @@ export default function ImgUploadPreview({ handleFileUpload, handleFileBase64 })
     };
     const handleFilesMultiple = (files) => {
         const newUrls = [];
-        // files.map((file) => {
-        //     newUrls.push(file.base64); 
-        // })
-        console.log('new url,', files)
+
+        //console.log('new url,', files)
         for (let i = 0; i < files.base64.length; i++) {
             newUrls.push(files.base64[i]); 
         }
-        console.log('new url,', newUrls)
+        //console.log('new url,', newUrls)
         setUrls([...newUrls]);
         
     };
@@ -41,7 +39,7 @@ export default function ImgUploadPreview({ handleFileUpload, handleFileBase64 })
     const handleFileChange = (event) => {
 
         const file = event.target.files[0];
-        console.log("FILE NÀ", file);
+        //console.log("FILE NÀ", file);
         handleFileUpload(file);
         handleFileBase64("");
 

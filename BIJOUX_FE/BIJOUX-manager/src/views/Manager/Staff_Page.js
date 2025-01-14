@@ -127,7 +127,7 @@ const Staff_Page = () => {
     const handleDataChange = async () => {
         //const accountList = await get_account_list();
         const staffList =  await get_staff_list();
-        console.log("staffList ", staffList.data)
+        //console.log("staffList ", staffList.data)
         setState({
             sale: state_creator(staffList.data.sale_staff_list),
             design: state_creator(staffList.data.design_staff_list),

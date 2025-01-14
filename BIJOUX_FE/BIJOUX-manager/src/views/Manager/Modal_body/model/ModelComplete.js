@@ -142,7 +142,7 @@ const CustomForm = ({ modelInfo, onClose }) => {
             const model_detail = data_detail.data
             setModel(model_detail.model)
 
-            console.log("ẢNH THIẾU", model_detail.missing_image)
+            //console.log("ẢNH THIẾU", model_detail.missing_image)
             setState(state_creator(model_detail.missing_image, handleMainUpload, handleRelatedUpload))
             setLoading(false)
 
@@ -159,7 +159,7 @@ const CustomForm = ({ modelInfo, onClose }) => {
 
 
         }
-        console.log('update_model', new_model)
+        //console.log('update_model', new_model)
 
         window.location.reload();
         // set toast
@@ -191,7 +191,7 @@ const CustomForm = ({ modelInfo, onClose }) => {
             // console.log('row data', rowData)
 
             // const imageArray = [rowData.metal_1.imageUrl, rowData.metal_2.imageUrl]; 
-            console.log('ẢNH MAINNNNNNN', mainImages)
+            //console.log('ẢNH MAINNNNNNN', mainImages)
             const main_image = mainImages.find((item) => item.index == node.rowIndex).main_image;
             const related_image = relatedImages.find((item) => item.index == node.rowIndex).related_image;
 
@@ -207,7 +207,7 @@ const CustomForm = ({ modelInfo, onClose }) => {
         });
 
         //image_list([...rowData, ...newData]);
-        console.log('OH SHIT BRO', image_list)
+        //console.log('OH SHIT BRO', image_list)
 
         const set_available = {
             model_id: modelInfo.id,
@@ -247,7 +247,7 @@ const CustomForm = ({ modelInfo, onClose }) => {
 
                                             <span className="text-dark fw-bold fs-5 text-center">Base Image</span>
 
-                                            <UploadSingle defaultImage={model ? model.imageUrl : "http://localhost:8000/image/Metal/1/main.jpg"} disabled={true} />
+                                            <UploadSingle defaultImage={model ? model.imageUrl : process.env.REACT_APP_BACKEND_IMAGE_URL + "/Metal/1/main.jpg"} disabled={true} />
 
                                         </div>
                                     </CCol>

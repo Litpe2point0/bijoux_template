@@ -50,8 +50,8 @@ export default function MetalCard({ product, handleChange }) {
         handleChange(metalList)
     }, [metalList])
     const handleRemove = (index) => {
-        console.log('metal list', metalList)
-        console.log('index', index)
+        //console.log('metal list', metalList)
+        //console.log('index', index)
         const updatedMetalList = [...metalList];
         updatedMetalList.splice(index, 1);
 

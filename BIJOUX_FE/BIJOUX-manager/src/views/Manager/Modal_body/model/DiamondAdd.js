@@ -84,12 +84,12 @@ const CustomForm = ({ handleAddDiamond, onClose }) => {
 
 
     useEffect(() => {
-        console.log('addShape', addShape)
-        console.log('minSize', minSize)
-        console.log('maxSize', maxSize)
+        //console.log('addShape', addShape)
+        //console.log('minSize', minSize)
+        //console.log('maxSize', maxSize)
 
-        console.log('count', count)
-        console.log('isEditable', isEditable)
+        //console.log('count', count)
+        //console.log('isEditable', isEditable)
     }, [addShape, minSize, maxSize, count, isEditable])
 
 
@@ -103,11 +103,11 @@ const CustomForm = ({ handleAddDiamond, onClose }) => {
         setCount(event.target.value)
     }
     const handleMinSize = (event) => {
-        console.log('min size', parseFloat(event.target.value))
+        //console.log('min size', parseFloat(event.target.value))
         setMinSize(parseFloat(event.target.value))
     }
     const handleMaxSize = (event) => {
-        console.log('max size', parseFloat(event.target.value))
+        //console.log('max size', parseFloat(event.target.value))
         setMaxSize(parseFloat(event.target.value))
     }
 
@@ -126,7 +126,7 @@ const CustomForm = ({ handleAddDiamond, onClose }) => {
                 is_editable: isEditable ? 1 : 0
             }
 
-            console.log('add diamond', add_diamond)
+            //console.log('add diamond', add_diamond)
             if(maxSize < minSize){
                 return dispatch(setToast({ color: 'danger',title: 'Add Failed', mess: "max size must be greater than min size" }))
             }

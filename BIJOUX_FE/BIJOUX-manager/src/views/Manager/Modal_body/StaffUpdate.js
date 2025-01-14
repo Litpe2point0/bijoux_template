@@ -55,7 +55,7 @@ const CustomForm = ({ account, onClose }) => {
   }
   const handleSingleFileBase64 = (base64) => {
     setImageBase64(base64)
-    console.log(base64)
+    //console.log(base64)
   }
 
   const handleSubmit = async (event) => {
@@ -80,7 +80,7 @@ const CustomForm = ({ account, onClose }) => {
         address: address.current.value
       }
 
-      console.log("new_account", new_account)
+      //console.log("new_account", new_account)
 
       const formData = new FormData();
       formData.append('new_account', JSON.stringify(new_account));
@@ -162,7 +162,7 @@ const CustomForm = ({ account, onClose }) => {
       </CCol>
       <CCol md={12}>
         <CFormLabel htmlFor="validationCustom02">Avatar</CFormLabel>
-        <AvatarUpload defualtImage={'http://127.0.0.1:8000/image/Accounts/unknown.jpg'} handleSingleFileBase64={handleSingleFileBase64} />
+        <AvatarUpload defualtImage={process.env.REACT_APP_BACKEND_IMAGE_URL + '/Account/unknown.jpg'} handleSingleFileBase64={handleSingleFileBase64} />
       </CCol>
 
       <CCol xs={12} className="d-flex justify-content-center align-items-center">

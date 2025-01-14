@@ -18,7 +18,7 @@ export default function AvatarUpload({ handleSingleFileBase64 , defualtImage }) 
 
     const handleFile = (files) => {
         const file = files[0];
-        console.log("FILE NÀ", files.base64);
+        // console.log("FILE NÀ", files.base64);
         handleSingleFileBase64(files.base64);
         setUrl(files.base64);
     };

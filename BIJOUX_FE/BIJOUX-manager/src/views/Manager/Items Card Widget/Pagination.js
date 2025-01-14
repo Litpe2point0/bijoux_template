@@ -63,7 +63,7 @@ export default function Pagination({ mounting_type, completed }) {
 
 
   const get_model_list_from_data = async (mounting_type) => {
-    console.log('TYPE', mounting_type.id)
+    //console.log('TYPE', mounting_type.id)
     const model_search_information = {
       mounting_type_id: mounting_type.id,
       mounting_style: [],

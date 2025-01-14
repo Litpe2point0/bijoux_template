@@ -17,11 +17,11 @@ export default function UploadPreviewMultiple({handleMultiFileBase64 }) {
     const handleFilesMultiple = (files) => {
         const newUrls = [];
         
-        console.log('new url,', files)
+        //console.log('new url,', files)
         for (let i = 0; i < files.base64.length; i++) {
             newUrls.push(files.base64[i]); 
         }
-        console.log('new url,', newUrls)
+        //console.log('new url,', newUrls)
         setUrls([...newUrls]);
         
     };

@@ -64,24 +64,24 @@ const Order_Detail = () => {
 
 
     const handleSingleFileBase64 = (base64) => {
-        console.log('file nè', base64)
+        //console.log('file nè', base64)
         setImageBase64(base64)
     }
     const handleNote = (note) => {
-        console.log('note', note)
+        //console.log('note', note)
         setNote(note);
     }
     const handleMetal = (metal_list) => {
-        console.log('metal_list', metal_list)
+        //console.log('metal_list', metal_list)
         setMetalList([...metal_list])
     }
     const handleDiamond = (diamond_list) => {
-        console.log('diamond_list', diamond_list)
+        //console.log('diamond_list', diamond_list)
         setDiamondList([...diamond_list])
     }
     const handleOther = (type_id, mounting_size) => {
-        console.log('mounting_type id', type_id)
-        console.log('mounting_size', mounting_size)
+        //console.log('mounting_type id', type_id)
+        //console.log('mounting_size', mounting_size)
         setTypeId(type_id);
         setSize(mounting_size > 0 ? mounting_size : 0);
     }
@@ -100,7 +100,7 @@ const Order_Detail = () => {
             const order_detail = detail_data.data.order_detail
 
 
-            console.log('order_detail', order_detail)
+            //console.log('order_detail', order_detail)
             if (order_detail.design_process_status != null) {
                 dispatch(setToast({ color: "danger", title: 'Order [ID: #' + order_detail.id + ']', mess: "This order is already have a design process" }))
                 navigate('/orders_design_staff/table')
@@ -135,7 +135,7 @@ const Order_Detail = () => {
             "profit_rate": null,
 
         }
-        console.log('new_design_process', new_design_process)
+        //console.log('new_design_process', new_design_process)
         const formData = new FormData();
         formData.append('new_design_process', JSON.stringify(new_design_process));
 

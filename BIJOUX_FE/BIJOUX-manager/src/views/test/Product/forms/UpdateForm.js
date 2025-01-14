@@ -47,11 +47,11 @@ const CustomStyles = ({ product }) => {
   
   const handleFileBase64 = (base64) => {
     setImageBase64(base64)
-    console.log(base64)
+    //console.log(base64)
   }
   const handleFileUpload = (file) => {
     setImageFile(file)
-    console.log(file)
+    //console.log(file)
   }
 
 

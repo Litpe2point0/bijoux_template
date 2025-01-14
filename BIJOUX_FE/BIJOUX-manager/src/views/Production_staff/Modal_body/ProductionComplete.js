@@ -57,7 +57,7 @@ const CustomForm = ({ currentProductionProcess, onClose }) => {
         setLoading(true);
         const order_id=order.id 
 
-        console.log('order_id',order_id)
+        //console.log('order_id',order_id)
         const formData = new FormData();
         formData.append('order_id', JSON.stringify(order_id));
 

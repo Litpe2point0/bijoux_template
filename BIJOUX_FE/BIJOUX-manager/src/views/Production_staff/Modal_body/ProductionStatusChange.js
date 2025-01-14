@@ -70,7 +70,7 @@ const CustomForm = ({ currentProductionStatus, onClose }) => {
             imageUrl: imageBase64,
         }
 
-        console.log('new_production_process', new_production_process)
+        //console.log('new_production_process', new_production_process)
         const formData = new FormData();
         formData.append('new_production_process', JSON.stringify(new_production_process));
 

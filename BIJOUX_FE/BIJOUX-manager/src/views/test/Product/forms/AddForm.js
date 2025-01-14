@@ -44,11 +44,11 @@ const CustomStyles = () => {
   }
   const handleFileBase64 = (base64) => {
     setImageBase64(base64)
-    console.log(base64)
+    //console.log(base64)
   }
   const handleFileUpload = (file) => {
     setImageFile(file)
-    console.log(file)
+    //console.log(file)
   }
 
   const handleSubmit = async (event) => {
@@ -66,7 +66,7 @@ const CustomStyles = () => {
         quantity: add_quantity.current.value,
         image: imageBase64,
       }
-      console.log("add product", new_product)
+      //console.log("add product", new_product)
 
       const formData = new FormData();
       formData.append('imageFile', imageFile);

@@ -28,10 +28,9 @@ export const proccess_login = async (dispatch, navigate, login_information) => {
     let response = await login(formData);
     if (response.success) {
         
-        //alert(response.success)
         const token=response.jwt_token
         const user = getUserFromToken(token)
-        console.log("User From JWT", user)
+        //console.log("User From JWT", user)
         dispatch(setToast({ color: "success",title: 'Login Successfully !', mess: 'Welcome '+ user.fullname}))
         //sessionStorage.setItem('user', JSON.stringify(user));
         save_login( dispatch,token, user)
@@ -41,7 +40,6 @@ export const proccess_login = async (dispatch, navigate, login_information) => {
 
     } else if (response.error) {
         dispatch(setToast({ color: "danger",title: 'Login Failed !', mess: 'Wrong username or password '}))
-        //alert(response.error)
         console.log(response.error)
     }
 
@@ -63,11 +61,11 @@ export const useLogin = () => {
         let response = await login(formData);
         if (response.success) {
             const user = getUserFromToken(response.jwt_token);
-            console.log("User From JWT", user);
+            //console.log("User From JWT", user);
             dispatch(setAuthToken({ token: response.jwt_token, user: user }));
             navigate('/dashboard');
         } else if (response.error) {
-            console.log(response.error);
+            //console.log(response.error);
         }
     }, [dispatch, navigate]);
 

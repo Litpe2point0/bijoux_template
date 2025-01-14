@@ -11,7 +11,7 @@ export default function MainUpload({ rowIndex, handleMainUpload }) {
     const handleFile = (files) => {
         const file = files[0];
         handleMainUpload(index, files.base64 );
-        console.log('index here', index)
+        //console.log('index here', index)
         setUrl(files.base64);
     };
 

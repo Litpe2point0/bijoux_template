@@ -54,7 +54,7 @@ const CustomForm = () => {
   }
   const handleSingleFileBase64 = (base64) => {
     setImageBase64(base64)
-    console.log(base64)
+    //console.log(base64)
   }
 
   const handleSubmit = async (event) => {
@@ -78,7 +78,7 @@ const CustomForm = () => {
         address: address.current.value
       }
 
-      console.log("add account", new_account)
+      //console.log("add account", new_account)
 
       const formData = new FormData();
       formData.append('new_account', JSON.stringify(new_account));
@@ -102,7 +102,7 @@ const CustomForm = () => {
   
 
   const handleRoleChange = (role) => {
-    console.log(role)
+    //console.log(role)
     setSelectedRole(role)
   }
   useEffect( ()=>{

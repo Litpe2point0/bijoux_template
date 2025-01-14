@@ -34,7 +34,7 @@ const CustomForm = ({ modelInfo, activate, onClose }) => {
             model_id: model_id,
             deactivate: !activate
         }
-        console.log('deactivate', deactivate)
+        //console.log('deactivate', deactivate)
         const formData = new FormData();
         formData.append('deactivate', JSON.stringify(deactivate));
         

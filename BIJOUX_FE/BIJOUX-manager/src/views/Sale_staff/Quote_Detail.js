@@ -76,30 +76,30 @@ const Quote_Detail = () => {
     const [totalPrice, setTotalPrice] = useState(0);
 
     const handleSingleFileBase64 = (base64) => {
-        console.log('file nè', base64)
+        //console.log('file nè', base64)
         setImageBase64(base64)
     }
     const handleNote = (note) => {
-        console.log('note', note)
+        //console.log('note', note)
         setNote(note);
     }
     const handleMetal = (metal_list) => {
-        console.log('metal_list', metal_list)
+        //console.log('metal_list', metal_list)
         setMetalList([...metal_list])
     }
     const handleDiamond = (diamond_list) => {
-        console.log('diamond_list', diamond_list)
+        //console.log('diamond_list', diamond_list)
         setDiamondList([...diamond_list])
     }
     const handleOther = (type_id, mounting_size) => {
-        console.log('mounting_type id', type_id)
-        console.log('mounting_size', mounting_size)
+        //console.log('mounting_type id', type_id)
+        //console.log('mounting_size', mounting_size)
         setTypeId(type_id);
         setSize(mounting_size > 0 ? mounting_size : 0);
     }
     const handlePrice = (profit_rate, production_price) => {
-        console.log('profit rate', profit_rate)
-        console.log('production price', production_price)
+        //console.log('profit rate', profit_rate)
+        //console.log('production price', production_price)
         setProfitRate(profit_rate);
         setProductionPrice(production_price > 0 ? production_price : 0);
     }
@@ -146,7 +146,7 @@ const Quote_Detail = () => {
     }, [])
     useEffect(() => {
         const total = (parseFloat(productionPrice) + (metalList.reduce((total, item) => total + item.price, 0) + diamondList.reduce((total, item) => total + item.price, 0)) * (profitRate + 100) / 100).toFixed(2);
-        console.log('Total', total)
+        //console.log('Total', total)
         setTotalPrice(parseFloat(total));
     }, [profitRate, productionPrice, metalList, diamondList])
 
@@ -166,7 +166,7 @@ const Quote_Detail = () => {
             "total_price": totalPrice,
 
         }
-        console.log('priced_quote', priced_quote)
+        //console.log('priced_quote', priced_quote)
         const formData = new FormData();
         formData.append('priced_quote', JSON.stringify(priced_quote));
 

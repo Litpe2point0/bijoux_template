@@ -47,25 +47,25 @@ const AddForm = ({ mounting_type, handleModelAdd, onClose }) => {
 
 
     const handleSingleFileBase64 = (base64) => {
-        console.log('file nè', base64)
+        //console.log('file nè', base64)
         setImageBase64(base64)
     }
     const handleInfo = (info) => {
-        console.log('info', info)
+        //console.log('info', info)
         setInfo(info)
     }
     const handleMetal = (metal_list) => {
-        console.log('metal_list', metal_list)
+        //console.log('metal_list', metal_list)
         setMetalList([...metal_list])
     }
     const handleDiamond = (diamond_list) => {
-        console.log('diamond_list', diamond_list)
+        //console.log('diamond_list', diamond_list)
         setDiamondList([...diamond_list])
     }
 
     const handlePrice = (profit_rate, production_price) => {
-        console.log('profit rate', profit_rate)
-        console.log('production price', production_price)
+        //console.log('profit rate', profit_rate)
+        //console.log('production price', production_price)
         setProfitRate(profit_rate);
         setProductionPrice(isNaN(production_price) ? 0 : production_price);
     }
@@ -106,7 +106,7 @@ const AddForm = ({ mounting_type, handleModelAdd, onClose }) => {
 
 
         }
-        console.log('new_model', new_model)
+        //console.log('new_model', new_model)
         const formData = new FormData();
         formData.append('new_model', JSON.stringify(new_model));
         let response = await add_model(formData, 'New Model');
@@ -210,25 +210,25 @@ const UpdateForm = ({ modelInfo, mounting_type, onClose }) => {
 
 
     const handleSingleFileBase64 = (base64) => {
-        console.log('file nè', base64)
+        //console.log('file nè', base64)
         setImageBase64(base64)
     }
     const handleInfo = (info) => {
-        console.log('info', info)
+        //console.log('info', info)
         setInfo(info)
     }
     const handleMetal = (metal_list) => {
-        console.log('metal_list', metal_list)
+        //console.log('metal_list', metal_list)
         setMetalList([...metal_list])
     }
     const handleDiamond = (diamond_list) => {
-        console.log('diamond_list', diamond_list)
+        //console.log('diamond_list', diamond_list)
         setDiamondList([...diamond_list])
     }
 
     const handlePrice = (profit_rate, production_price) => {
-        console.log('profit rate', profit_rate)
-        console.log('production price', production_price)
+        //console.log('profit rate', profit_rate)
+        //console.log('production price', production_price)
         setProfitRate(profit_rate);
         setProductionPrice(isNaN(production_price) ? 0 : production_price);
     }
@@ -273,7 +273,7 @@ const UpdateForm = ({ modelInfo, mounting_type, onClose }) => {
 
 
         }
-        console.log('update_model', new_model)
+        //console.log('update_model', new_model)
 
         const formData = new FormData();
         formData.append('new_model', JSON.stringify(new_model));

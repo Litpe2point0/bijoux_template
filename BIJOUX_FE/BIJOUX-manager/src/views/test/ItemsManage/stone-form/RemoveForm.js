@@ -41,7 +41,7 @@ const CustomStyles = ({ shape, onClose }) => {
                 name: shape.name,
                 path: shape.path
             }
-            console.log("removing stone shape", remove_shape)
+            //console.log("removing stone shape", remove_shape)
 
             const formData = new FormData();
 

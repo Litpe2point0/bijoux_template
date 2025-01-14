@@ -42,7 +42,7 @@ const CustomStyles = ({onClose}) => {
         name: add_name.current.value,
         path: add_path.current.value
       }
-      console.log("adding stone shape", new_shape)
+      //console.log("adding stone shape", new_shape)
 
       const formData = new FormData();
       

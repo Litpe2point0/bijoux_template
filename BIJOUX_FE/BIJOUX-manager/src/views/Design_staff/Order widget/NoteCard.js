@@ -70,7 +70,7 @@ const DesignNoteCard = ({ mainNote, note, minRows, maxRows }) => {
 
 const NoteCard = ({ mainNote, note, minRows, maxRows, handleChange }) => {
 
-    console.log('note', note)
+    //console.log('note', note)
     if (mainNote != null) {
         return <DesignNoteCard mainNote={mainNote} minRows={minRows} maxRows={maxRows} note={note} handleChange={handleChange} />
 

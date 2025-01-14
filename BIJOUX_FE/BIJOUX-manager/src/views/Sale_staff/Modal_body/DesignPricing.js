@@ -204,16 +204,11 @@ const CustomForm = ({ designInfo, onClose }) => {
             const metal_design = design_process.order.product.product_metal.filter(item => item.status == 0)
             const diamond_design = design_process.order.product.product_diamond.filter(item => item.status == 0)
 
-            // setPreviousMetalList(design_process.order.product.product_metal.filter(item => item.status == 1))
-            // setPreviousDiamondList(design_process.order.product.product_diamond.filter(item => item.status == 1))
 
-            // setUpdatingMetalList(design_process.order.product.product_metal.filter(item => item.status == 0))
-            // setUpdatingDiamondList(design_process.order.product.product_diamond.filter(item => item.status == 0))
-
-            console.log('complete_metal_list_previous', complete_metal_list_previous(metal_old, metal_new))
-            console.log('complete_diamond_list_previous', complete_diamond_list_previous(diamond_old, diamond_new))
-            console.log('complete_metal_list_updating', complete_metal_list_updating(metal_old, metal_new, metal_design))
-            console.log('complete_diamond_list_updating', complete_diamond_list_updating(diamond_old, diamond_new, diamond_design))
+            //console.log('complete_metal_list_previous', complete_metal_list_previous(metal_old, metal_new))
+            //console.log('complete_diamond_list_previous', complete_diamond_list_previous(diamond_old, diamond_new))
+            //console.log('complete_metal_list_updating', complete_metal_list_updating(metal_old, metal_new, metal_design))
+            //console.log('complete_diamond_list_updating', complete_diamond_list_updating(diamond_old, diamond_new, diamond_design))
 
             const metal_previous = complete_metal_list_previous(metal_old, metal_new)
             const diamond_previous = complete_diamond_list_previous(diamond_old, diamond_new)
@@ -243,7 +238,7 @@ const CustomForm = ({ designInfo, onClose }) => {
 
 
     const handleNote = (new_note) => {
-        console.log(new_note)
+        //console.log(new_note)
         setNote(new_note)
     }
 
@@ -256,7 +251,7 @@ const CustomForm = ({ designInfo, onClose }) => {
             profit_rate: profitRate,
             note: note
         }
-        console.log('priced_design_process', priced_design_process)
+        //console.log('priced_design_process', priced_design_process)
         const formData = new FormData();
         formData.append('priced_design_process', JSON.stringify(priced_design_process));
 
@@ -377,9 +372,9 @@ const CustomForm = ({ designInfo, onClose }) => {
                                         className="fw-bold"
                                         onClick={() => {
                                             setHandleImageChange(!handleImageChange);
-                                            console.log(!handleImageChange)
-                                            console.log(product.imageUrl)
-                                            console.log(designProcess.imageUrl)
+                                            //console.log(!handleImageChange)
+                                            //console.log(product.imageUrl)
+                                            //console.log(designProcess.imageUrl)
 
                                         }}>
                                         {handleImageChange == true ? 'view current image' : 'view previous image'}

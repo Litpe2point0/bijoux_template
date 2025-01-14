@@ -20,48 +20,7 @@ import RadioGroup from '@mui/joy/RadioGroup';
 import { get_account_list } from "../../../../api/main/accounts/Account_api";
 import { get_metal_list } from "../../../../api/main/items/Metal_api";
 
-// const metal = [
-//     {
-//         "id": 1,
-//         "name": "Gold",
-//         'imageUrl': "http://localhost:8000/image/Metal/1/main.jpg",
-//         "buy_price_per_gram": 60.00,
-//         "sale_price_per_gram": 75.00,
-//         "specific_weight": 19.32,
-//         "deactivated": false,
-//         "created": "2024-01-15T10:20:30.000Z"
-//     },
-//     {
-//         "id": 2,
-//         "name": "Silver",
-//         'imageUrl': "http://localhost:8000/image/Metal/2/main.jpg",
-//         "buy_price_per_gram": 0.80,
-//         "sale_price_per_gram": 1.20,
-//         "specific_weight": 10.49,
-//         "deactivated": false,
-//         "created": "2024-01-20T14:35:22.000Z"
-//     },
-//     {
-//         "id": 3,
-//         "name": "Platinum",
-//         'imageUrl': "http://localhost:8000/image/Metal/3/main.jpg",
-//         "buy_price_per_gram": 30.00,
-//         "sale_price_per_gram": 45.00,
-//         "specific_weight": 21.45,
-//         "deactivated": false,
-//         "created": "2024-01-25T08:15:55.000Z"
-//     },
-//     {
-//         "id": 4,
-//         "name": "Copper",
-//         'imageUrl': "http://localhost:8000/image/Metal/4/main.jpg",
-//         "buy_price_per_gram": 0.02,
-//         "sale_price_per_gram": 0.03,
-//         "specific_weight": 8.96,
-//         "deactivated": true,
-//         "created": "2023-12-01T12:00:00.000Z"
-//     }
-// ]
+
 const CustomForm = ({ handleAddMetal, onClose }) => {
     const [validated, setValidated] = useState(false)   //check form điền đầy đủ chưa
     const [loading, setLoading] = useState(true)  //loading
@@ -88,9 +47,9 @@ const CustomForm = ({ handleAddMetal, onClose }) => {
 
 
     useEffect(() => {
-        console.log('select metal', selectedMetal)
-        console.log('add Percentage', addPercentage)
-        console.log('is main', isMain)
+        //console.log('select metal', selectedMetal)
+        //console.log('add Percentage', addPercentage)
+        //console.log('is main', isMain)
     }, [selectedMetal, addPercentage,isMain])
 
 
@@ -117,7 +76,7 @@ const CustomForm = ({ handleAddMetal, onClose }) => {
                 percentage: addPercentage,
                 is_main: isMain ? 1:0
             }
-            console.log('add metal', add_metal)
+            //console.log('add metal', add_metal)
             handleAddMetal(add_metal)
             onClose();
         }

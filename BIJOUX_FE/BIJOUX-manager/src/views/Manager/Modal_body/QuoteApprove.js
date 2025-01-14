@@ -90,7 +90,7 @@ const CustomForm = ({ quoteInfo, onClose }) => {
 
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleSubmit = async (approve) => {
@@ -101,7 +101,7 @@ const CustomForm = ({ quoteInfo, onClose }) => {
             approve: approve,
             note: note
         }
-        console.log('approval', approval)
+        //console.log('approval', approval)
         const formData = new FormData();
         formData.append('approval', JSON.stringify(approval));
 

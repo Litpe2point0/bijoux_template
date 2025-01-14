@@ -55,10 +55,10 @@ const CustomForm = ({ handleAddMetal, onClose }) => {
 
 
     useEffect(() => {
-        console.log('select metal', selectedMetal)
-        console.log('add volume', addVolume)
-        console.log('add weight', addWeight)
-        console.log('add price', addPrice)
+        //console.log('select metal', selectedMetal)
+        //console.log('add volume', addVolume)
+        //console.log('add weight', addWeight)
+        //console.log('add price', addPrice)
     }, [selectedMetal, addVolume, addWeight, addPrice])
 
 
@@ -80,7 +80,7 @@ const CustomForm = ({ handleAddMetal, onClose }) => {
                 metal_id: selectedMetal.id,
                 volume: addVolume
             }
-            console.log('metal_information', metal_information)
+            //console.log('metal_information', metal_information)
             const formData = new FormData();
             formData.append('metal_information', JSON.stringify(metal_information));
             const result = await get_weight_price(formData);

@@ -87,14 +87,14 @@ const complete_diamond_list_previous = (old_list, new_list) => {   // old_list: 
 }
 const complete_metal_list_updating = (old_list, current_list, new_list) => { // old_list: status 3, current_list: status 1, new_list: status 0
     const current = complete_metal_list_previous(old_list, current_list)
-    console.log('CURRENT METAL', current)
-    console.log('NEW METAL', new_list)
+    //console.log('CURRENT METAL', current)
+    //console.log('NEW METAL', new_list)
     new_list.forEach((new_item,index) => {
-        console.log('LOOP ITEM', new_item)
+        //console.log('LOOP ITEM', new_item)
         const found = current.find((current_item) => current_item.metal.id === new_item.metal.id && current_item.volume === new_item.volume)
         
         if (found) {
-            console.log("ITEM FOUND", found)
+            //console.log("ITEM FOUND", found)
             new_list[index] = found; 
         }
     }
@@ -222,7 +222,7 @@ const CustomForm = ({ designInfo, onClose }) => {
 
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleSubmit = async (approve) => {
@@ -234,7 +234,7 @@ const CustomForm = ({ designInfo, onClose }) => {
             note: note
 
         }
-        console.log('approval', approval)
+        //console.log('approval', approval)
         const formData = new FormData();
         formData.append('approval', JSON.stringify(approval));
 
@@ -345,9 +345,9 @@ const CustomForm = ({ designInfo, onClose }) => {
                                         className="fw-bold"
                                         onClick={() => {
                                             setHandleImageChange(!handleImageChange);
-                                            console.log(!handleImageChange)
-                                            console.log(product.imageUrl)
-                                            console.log(designProcess.imageUrl)
+                                            //console.log(!handleImageChange)
+                                            //console.log(product.imageUrl)
+                                            //console.log(designProcess.imageUrl)
 
                                         }}>
                                         {handleImageChange == true ? 'view current image' : 'view previous image'}

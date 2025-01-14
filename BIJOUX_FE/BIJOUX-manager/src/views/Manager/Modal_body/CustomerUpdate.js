@@ -49,7 +49,7 @@ const CustomForm = ({ account, onClose }) => {
 
   const handleSingleFileBase64 = (base64) => {
     setImageBase64(base64)
-    console.log(base64)
+    //console.log(base64)
   }
 
   const handleSubmit = async (event) => {
@@ -74,7 +74,7 @@ const CustomForm = ({ account, onClose }) => {
         address: address.current.value
       }
 
-      console.log("new_account", new_account)
+      //console.log("new_account", new_account)
 
       const formData = new FormData();
       formData.append('new_account', JSON.stringify(new_account));

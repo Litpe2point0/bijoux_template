@@ -65,7 +65,7 @@ const Login = () => {
 const [toast, setToast]=useState();
 const new_toast = useSelector((state) => state.toast.toast_component);
 useEffect(() => {
-  console.log(new_toast)
+  //console.log(new_toast)
   setToast(new_toast);
 }, [new_toast]);
 

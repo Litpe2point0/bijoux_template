@@ -12,6 +12,6 @@ export function response_with_mess(isSuccess, title, mess, data) {
         },
         data: data
     }
-    console.log("RESPONSE HERE",response)
+    // console.log("RESPONSE HERE",response)
     return response;
 }

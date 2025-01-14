@@ -54,7 +54,7 @@ const CustomForm = ({ orderInfo, account, onClose }) => {
 
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleSubmit = async (event) => {
@@ -69,7 +69,7 @@ const CustomForm = ({ orderInfo, account, onClose }) => {
                 order_id: orderInfo.id,
                 note: note != null ? note.trim() : ''
             }
-            console.log('cancel order', cancel)
+            //console.log('cancel order', cancel)
             const formData = new FormData();
             formData.append('cancel', JSON.stringify(cancel));
 
@@ -81,9 +81,6 @@ const CustomForm = ({ orderInfo, account, onClose }) => {
             }
             dispatch(setToast(response.mess))
 
-            // handleDataChange();
-            // dispatch(setToast({ color: 'success', title: 'Order id ' + orderInfo.id, mess: "Cancel successfully !" }))
-            // onClose();
 
         }
 

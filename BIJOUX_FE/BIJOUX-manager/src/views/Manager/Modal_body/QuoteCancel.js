@@ -49,7 +49,7 @@ const CustomForm = ({ quoteInfo, onClose }) => {
 
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleSubmit = async (event) => {
@@ -64,7 +64,7 @@ const CustomForm = ({ quoteInfo, onClose }) => {
                 quote_id: quoteInfo.id,
                 note: note !=  null ? note.trim() : ''
             }
-            console.log('cancel quote', cancel)
+            //console.log('cancel quote', cancel)
             const formData = new FormData();
             formData.append('cancel', JSON.stringify(cancel));
             

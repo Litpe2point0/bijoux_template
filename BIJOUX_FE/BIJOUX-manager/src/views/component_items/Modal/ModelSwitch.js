@@ -22,7 +22,7 @@ const Model_Switch = (props) => {
         setVisible(!visible)
         const check = e.target.checked;
         setChecked(check)
-        console.log(check)
+        //console.log(check)
         setVisible(true)
         setIsAccepted(false)
     }

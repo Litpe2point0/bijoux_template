@@ -69,7 +69,7 @@ const state_creator = (table) => {
         cellClass: 'd-flex align-items-center py-1',
         cellRenderer: (params) => {
           const order_status = params.data.order_status;
-          console.log(order_status)
+          //console.log(order_status)
           return order_refund_status_creator(order_status);
         }
       },

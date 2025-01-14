@@ -52,7 +52,7 @@ const Login = () => {
   },[])
   
   useEffect(() => {
-    console.log(new_toast)
+    //console.log(new_toast)
     setToast(new_toast);
   }, [new_toast]);
 

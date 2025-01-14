@@ -87,7 +87,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
 
         setOrder(order_detail)
         setProduct(order_detail.product)
-        console.log('order_detail.product', order_detail.product)
+        //console.log('order_detail.product', order_detail.product)
 
         setSaleStaff(order_detail.sale_staff);
         setDesignStaff(order_detail.design_staff);
@@ -117,7 +117,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
 
     const handleNote = (new_note) => {
         setNote(new_note)
-        console.log("new note", new_note)
+        //console.log("new note", new_note)
     }
 
     const handleDataChange = () => {
@@ -393,7 +393,7 @@ const CustomForm = ({ orderInfo, onClose }) => {
                                         <CAccordionBody>
                                             <Timeline position="right">
                                                 {productionProcessList.map((item, index) => {
-                                                    console.log("listingnownfownefo", item)
+                                                    //console.log("listingnownfownefo", item)
                                                     return <TimelineItem>
                                                         <TimelineOppositeContent
                                                             sx={{ m: 'auto 0' }}

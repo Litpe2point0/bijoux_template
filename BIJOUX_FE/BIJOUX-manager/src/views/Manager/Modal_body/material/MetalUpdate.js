@@ -77,7 +77,7 @@ const CustomForm = ({ metalInfo, onClose }) => {
             metal_id: metal.id,
             deactivate: new_activate == 0 ? false : true
         }
-        console.log('deactivate', deactivate)
+        //console.log('deactivate', deactivate)
         const formData = new FormData();
         formData.append('deactivate', JSON.stringify(deactivate));
 
@@ -102,7 +102,7 @@ const CustomForm = ({ metalInfo, onClose }) => {
             sale_price_per_gram: salePrice,
         }
 
-        console.log('update_price', update_price)
+        //console.log('update_price', update_price)
         const formData = new FormData();
         formData.append('update_price', JSON.stringify(update_price));
 

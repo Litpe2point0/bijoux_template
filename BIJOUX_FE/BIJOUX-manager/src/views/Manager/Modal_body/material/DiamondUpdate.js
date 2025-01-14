@@ -76,7 +76,7 @@ const CustomForm = ({ diamondInfo, onClose }) => {
             diamond_id: diamond.id,
             deactivate: new_activate == 0 ? false : true
         }
-        console.log('deactivate', deactivate)
+        //console.log('deactivate', deactivate)
         const formData = new FormData();
         formData.append('deactivate', JSON.stringify(deactivate));
 
@@ -100,7 +100,7 @@ const CustomForm = ({ diamondInfo, onClose }) => {
 
         }
 
-        console.log('update_price', update_price)
+        //console.log('update_price', update_price)
         const formData = new FormData();
         formData.append('update_price', JSON.stringify(update_price));
 
