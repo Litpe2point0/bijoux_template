@@ -6,12 +6,12 @@ const Customer_Page = React.lazy(() => import('./views/Manager/Customer_Page'))
 const Staff_Page = React.lazy(() => import('./views/Manager/Staff_Page'));
 
 const Quote_Page_Manager = React.lazy(() => import('./views/Manager/Quote_Page'));
-const Quote_Price_Page_Manager = React.lazy(() => import('./views/Manager/Quote_Price.js'));
+const Quote_Price_Page_Manager = React.lazy(() => import('./views/Manager/Quote_Price'));
 
 const Order_Page_Manager = React.lazy(() => import('./views/Manager/Order_Page'));
 const Order_Price_Page_Manager = React.lazy(() => import('./views/Manager/Order_Price'));
 const Order_Refund_Page_Manager = React.lazy(() => import('./views/Manager/Order_Refund'));
-const Trasactions_Page_Manager = React.lazy(() => import('./views/Manager/Transaction_Page'));
+const Transactions_Page_Manager = React.lazy(() => import('./views/Manager/Transaction_Page'));
 
 const Model_Page = React.lazy(() => import('./views/Manager/Model_Page'));
 
@@ -60,7 +60,7 @@ const routes = [
   { path: '/orders_manager/table', name: 'Main Orders List', element: Order_Page_Manager, role_id: [1] },
   { path: '/orders_manager/price_reporting', name: 'Orders\'s Price Reporting', element: Order_Price_Page_Manager, role_id: [1] },
   { path: '/orders_manager/refund', name: 'Refund Orders List', element: Order_Refund_Page_Manager, role_id: [1] },
-  { path: '/orders_manager/transactions', name: 'Refund Orders List', element: Trasactions_Page_Manager, role_id: [1,2] },
+  { path: '/orders_manager/transactions', name: 'Refund Orders List', element: Transactions_Page_Manager, role_id: [1,2] },
 
   { path: '/mounting', name: 'Mounting', element: null, exact: true },
   { path: '/mounting/ring/table', name: 'Ring Models Management', element: Model_Page, props: { mounting_type: { id: 1, name: 'Ring' } }, role_id: [1] },
