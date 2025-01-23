@@ -31,8 +31,6 @@ import { useNavigate } from "react-router-dom";
 import ListItemDecorator from "@mui/joy/ListItemDecorator";
 import AvatarInput from "../../component_items/Avatar/Avatar";
 import { get } from "jquery";
-import MetalCard from "../Modal_body/model/widget/MetalCard";
-import DiamondCard from "../Modal_body/model/widget/DiamondCard";
 import { Avatar, Button, IconButton, List, ListItem, ListItemAvatar, ListItemText, TextareaAutosize, Typography } from "@mui/material";
 import AssignCard from "../../Manager/Quote widget/AssignCard";
 import QuoteProductImage from "../../Manager/Quote widget/QuoteProductImage";

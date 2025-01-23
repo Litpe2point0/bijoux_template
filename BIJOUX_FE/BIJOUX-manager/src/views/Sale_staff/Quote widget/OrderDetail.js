@@ -19,21 +19,13 @@ import {
     CAccordionBody
 } from '@coreui/react'
 import { get_account_list, get_staff_list } from "../../../api/main/accounts/Account_api";
-import AvatarUpload from "../../component_items/ImageUploader/AvatarUpload";
 import { useDispatch } from "react-redux";
 import { setToast } from "../../../redux/notification/toastSlice";
-import { FaUserCheck } from "react-icons/fa";
-import DateTimePicker from "../../component_items/DatePicker/DateTimePicker";
-import QuoteDetailCard from "./QuoteDetailCard";
 
 import { useNavigate } from "react-router-dom";
 import ListItemDecorator from "@mui/joy/ListItemDecorator";
 import AvatarInput from "../../component_items/Avatar/Avatar";
-import { get } from "jquery";
-import MetalCard from "../Modal_body/model/widget/MetalCard";
-import DiamondCard from "../Modal_body/model/widget/DiamondCard";
 import { Avatar, Button, IconButton, List, ListItem, ListItemAvatar, ListItemText, TextareaAutosize } from "@mui/material";
-import AssignCard from "../../Manager/Quote widget/AssignCard";
 import QuoteProductImage from "../../Manager/Quote widget/QuoteProductImage";
 import AccountCard from "../../Manager/Quote widget/AccountCard";
 import NoteCard from "../../Manager/Quote widget/NoteCard";
