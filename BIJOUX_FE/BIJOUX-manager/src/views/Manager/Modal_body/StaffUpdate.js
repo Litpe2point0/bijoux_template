@@ -162,7 +162,7 @@ const CustomForm = ({ account, onClose }) => {
       </CCol>
       <CCol md={12}>
         <CFormLabel htmlFor="validationCustom02">Avatar</CFormLabel>
-        <AvatarUpload defualtImage={process.env.REACT_APP_BACKEND_IMAGE_URL + '/Account/unknown.jpg'} handleSingleFileBase64={handleSingleFileBase64} />
+        <AvatarUpload defualtImage={account.imageUrl} handleSingleFileBase64={handleSingleFileBase64} />
       </CCol>
 
       <CCol xs={12} className="d-flex justify-content-center align-items-center">
